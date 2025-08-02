@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:"Passion One", sans-serif;
+    --fonte3:"Sriracha", cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+html, body{
+    min-height:100vh; /* algo relacionado ao tamanho da tela sobre aumentar e diminuir*/
+    background-color:darkgray;
+    font-family: var(--fonte1);
+ }
+ header{
+    background-color: black;
+    color: white;
+    text-align: center;
+ }
+ header > h1{
+  padding-top: 50px;
+  font-variant: small-caps; /* eu tenho as primeira letras maiusculas*/
+  font-family: var(--fonte2);
+  font-size: 10vw; /* o vw fala sobre o tamanho da tela ñ é o melhor recurso o melhor seria o midia queries*/ 
+ }
+ header > p {
+    padding-bottom: 50px;
+ }
+ header a:hover , footer a:hover{
+    text-decoration: underline;
+ }
+ section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em; /*significa o espaçamento em 2x entre cada linha*/
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3vw;
+ }
+ section > p {
+    padding-bottom: 2em;
+ }
+ a{
+    color: white;
+    text-decoration: none; /* sem o underline*/
+    
+ }
+ 
+    
+  
+ 
+section.normal{
+    background-color:white;
+    color: black;
+}
+section.imagem > p {
+   display: inline-block;
+   padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px; /*sombra no texto*/
+    
+}
+section.imagem {
+    
+   background-color: rgb(51, 51, 51);
+    color: white;
+   
+    background-size: cover; /* cover significa cobrir a tela inteira msm que de uma picotada na imagem , sempre usar cover*/
+    background-attachment: fixed; /* ele vai fixar a imagem enquanto rola no scroll*/
+}
+section#img01{
+background-image: url('../imagens/background001.jpg');
+background-position: right center;
+
+}
+section#img02{ 
+    background-image: url('../imagens/background002.jpg');
+  
+   
+
+}
+ footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
